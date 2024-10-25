@@ -3,14 +3,15 @@ function loader() {
     const target = document.querySelector(targetSelector)
     if (target){
       clearInterval(waitingForLoad)
-      showAllCoupons()
-      setTimeout(redeemAllCoupons, 500)
+      setTimeout(redeemAllCoupons, 500, target)
     }
   }
   const waitingForLoad = setInterval(waitingForTarget, 50, '.coupon-app')
 }
 
-function redeemAllCoupons() {
+function redeemAllCoupons(target) {
+  target.children[0].children[1].children[0].children[0].children[0].children[0].children[1].children[0].children[0].children[2].children[1].click()
+  // clicks the "show all button"
   let coupons = document.getElementsByClassName('available-to-clip')
   for(let i = coupons.length - 1; i >= 0; i--){
     coupons[i].click()

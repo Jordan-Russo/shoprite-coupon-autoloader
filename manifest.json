@@ -13,7 +13,7 @@
 
     "content_scripts": [
         {
-            "matches": ["*://shop-rite-web-prod.azurewebsites.net/*"],
+            "matches": ["*://shop-rite-web-prod.azurewebsites.net/*", "*://shoprite.com/*/digital-coupon/*"],
             "js": ["main.js"],
             "all_frames": true
         }
