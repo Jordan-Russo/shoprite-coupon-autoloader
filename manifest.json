@@ -21,7 +21,7 @@
 
     "browser_specific_settings": {
         "gecko": {
-            "id": "github.com/Jordan-Russo/shoprite-coupon-autoloader@myextensions.com",
+            "id": "shoprite-coupon-autoloader@jordanrusso.com",
             "strict_min_version": "57.0"
         }
     }

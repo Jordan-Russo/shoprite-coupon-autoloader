@@ -15,11 +15,7 @@ The **ShopRite Coupon Autoloader** is a browser extension designed to automatica
 1. **Download the Extension**:
    - Download:
      <>Code (button in green) -> Download ZIP -> Extract Files
-   - Clone:
-     ```bash
-     git clone https://github.com/Jordan-Russo/shoprite-coupon-autoloader.git
-     cd shoprite-coupon-autoloader
-     ```
+   - git clone
 
 2. **Load the Extension in Your Browser**:
    - **Chrome**:
@@ -30,6 +26,7 @@ The **ShopRite Coupon Autoloader** is a browser extension designed to automatica
    - **Firefox**:
      1. Open Firefox and go to `about:addons`.
      2. Click on the Gear Icon and press "Install add-on from File..."
+     2. Select the `manifest.json` file in the extension directory.
 
 3. **Usage**:
    1. Make sure you're logged in to shoprite.com
