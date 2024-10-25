@@ -3,7 +3,7 @@
     "name": "ShopRite Coupon Autoloader",
     "version": "1.0.0",
 
-    "description": "Automatically loads all coupons from the Digital Coupon Center to your account",
+    "description": "Automatically loads all coupons from the Shoprite Digital Coupon Center to your account",
 
     "browser_action": {
         "default_title": "shoprite-coupon-autoloader"
