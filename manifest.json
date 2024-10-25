@@ -5,7 +5,7 @@
 
     "description": "Automatically loads all coupons from the Shoprite Digital Coupon Center to your account",
 
-    "browser_action": {
+    "action": {
         "default_title": "shoprite-coupon-autoloader"
     },
 
