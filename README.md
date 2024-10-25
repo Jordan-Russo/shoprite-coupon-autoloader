@@ -21,11 +21,11 @@ The **ShopRite Coupon Autoloader** is a browser extension designed to automatica
    - **Chrome**:
      1. Open Chrome and go to `chrome://extensions/`.
      2. Enable "Developer mode" in the top right corner.
-     3. Click on "Load unpacked" and select the directory where the extension files are located.
+     3. Click on "Load unpacked" and select the extracted file.
 
    - **Firefox**:
-     1. Open Firefox and go to `about:addons`.
-     2. Click on the Gear Icon and press "Install add-on from File..."
+     1. Open Firefox and go to `about:debugging#/runtime/this-firefox`.
+     2. Click on "load temporary addon"
      2. Select the `manifest.json` file in the extension directory.
 
 3. **Usage**:
@@ -37,4 +37,4 @@ The **ShopRite Coupon Autoloader** is a browser extension designed to automatica
 
 This extension requires the following permissions:
 
-- **activeTab**: Allows the extension to interact with the current active tab.
+- **activeTab**: Allows the extension to interact with the currently active tab.
