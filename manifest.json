@@ -19,6 +19,14 @@
         }
     ],
 
+    "icons": [
+        {
+            "src": "/shoprite-logo.svg",
+            "purpose": "maskable any",
+            "sizes": "any"
+        }
+    ],
+
     "browser_specific_settings": {
         "gecko": {
             "id": "shoprite-coupon-autoloader@jordanrusso.com",
