@@ -32,7 +32,7 @@
     "browser_specific_settings": {
         "gecko": {
             "id": "shoprite-coupon-autoloader@jordanrusso.com",
-            "strict_min_version": "57.0"
+            "strict_min_version": "58.0"
         }
     }
 }
