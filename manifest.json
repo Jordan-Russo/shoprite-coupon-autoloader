@@ -13,8 +13,6 @@
         }
     },
 
-    "permissions": ["activeTab"],
-
     "content_scripts": [
         {
             "matches": ["*://shop-rite-web-prod.azurewebsites.net/*", "*://shoprite.com/*/digital-coupon/*"],
