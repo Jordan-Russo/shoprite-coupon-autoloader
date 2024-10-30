@@ -10,6 +10,10 @@ The **ShopRite Coupon Autoloader** is a browser extension designed to automatica
 
 - Automatically loads all available coupons to your ShopRite account.
 
+## Now available for free as an extension at webstores
+- Chrome: https://chromewebstore.google.com/detail/shoprite-coupon-autoloade/mgehmoakfddejaoinkgnckglggjfnomf
+- Firefox: https://addons.mozilla.org/en-US/firefox/addon/shoprite-coupon-autoloader
+
 ## Installation
 
 1. **Download the Extension**:
