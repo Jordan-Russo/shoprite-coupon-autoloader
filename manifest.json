@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "ShopRite Coupon Autoloader",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Automatically loads all coupons from the Shoprite Digital Coupon Center to your account",
     
     "action": {
