@@ -1,5 +1,5 @@
 function loader() {
-	const waitingForLoad = setInterval(showAllCoupons, 150, '.coupon-list-options button.ng-star-inserted')
+	const waitingForLoad = setInterval(showAllCoupons, 150, '#facet-all-coupons')
 	function showAllCoupons(targetSelector) {
 		const target = document.querySelector(targetSelector)
 		if (target){
@@ -11,7 +11,7 @@ function loader() {
 }
 
 function redeemAllCoupons() {
-	const getCoupons = () =>  document.getElementsByClassName('available-to-clip')
+	const getCoupons = () =>  document.getElementsByClassName('btn-load-to-card')
 	let coupons;
 	const waitForCoupons = setInterval(() => {
 		coupons = getCoupons()
