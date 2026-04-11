@@ -5,33 +5,33 @@ function loader() {
 		if (target){
 			clearInterval(waitingForLoad)
 			target.click()
-			setTimeout(redeemAllCoupons, 1000)
+			setTimeout(loadAllButtons, 1000)
 		}
 	}
 }
 
-function redeemAllCoupons() {
-	const getCoupons = () =>  document.getElementsByClassName('btn-load-to-card')
-	let coupons;
-	const waitForCoupons = setInterval(() => {
-		coupons = getCoupons()
-		if(coupons.length > 0){
-			clearInterval(waitForCoupons)
-			for(let i = coupons.length - 1; i >= 0; i--){
-				coupons[i].click()
-			}
-		}
-	}, 200)
+function findNewCoupons(){
+	let coupons = document.getElementsByClassName('btn-load-to-card')
+	return coupons
 }
 
-loader()
-
-/* unclipper for testing purposes
-function unredeemAllCoupons() {
-	let coupons = document.getElementsByClassName('already-clipped-unclip')
+async function loadAllButtons(){
+	let coupons = findNewCoupons();
+	let availableCouponCount = coupons.length
+	let hasNewCoupons = availableCouponCount > 0
+	while(hasNewCoupons){
+		coupons[coupons.length - 1].scrollIntoView({behavior: 'instant', block: 'end' })
+		await new Promise(resolve => setTimeout(resolve, 250))
+		const newCoupons = findNewCoupons()
+		if(newCoupons.length === availableCouponCount){
+			hasNewCoupons = false
+			coupons = newCoupons
+		}
+		availableCouponCount = newCoupons.length
+	}
 	for(let i = coupons.length - 1; i >= 0; i--){
 		coupons[i].click()
 	}
 }
-unredeemAllCoupons()
-*/
+
+loader()

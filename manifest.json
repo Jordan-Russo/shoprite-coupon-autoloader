@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "ShopRite Coupon Autoloader",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Automatically loads all coupons from the Shoprite Digital Coupon Center to your account",
     
     "action": {
@@ -15,7 +15,7 @@
 
     "content_scripts": [
         {
-            "matches": ["*://shop-rite-web-prod.azurewebsites.net/*", "*://shoprite.com/*/digital-coupon/*"],
+            "matches": ["*://shop-rite-web-prod.azurewebsites.net/*", "*://shoprite.com/*/digital-coupon*"],
             "js": ["main.js"],
             "all_frames": true
         }
